@@ -1,5 +1,5 @@
 ### Folium Map
-def generate_map(dataframe,lat_col, long_col, home, filename, color_variable=None, **kwargs):
+def generate_map(dataframe,lat_col, long_col, home, filename, **kwargs):
 
         '''
         Generates a HTML interactive bubble map using folium (mapping library based on Leaflet.js Maps)
@@ -34,26 +34,17 @@ def generate_map(dataframe,lat_col, long_col, home, filename, color_variable=Non
         # Generate Map
         mapit = folium.Map(location=[center_lat, center_long],
                            tiles='cartodbpositron',
-                           zoom_start=5.25)
+                           zoom_start=5.5)
         
-        if color_variable is not None:
-            
-            colors = ['#1A5C7F','#E81075', '#E8A02D', '#A9DCD6', '#4A4A4A', '#FFFFFF', '#ECECEC', '#DBDBDB', '#9B9B9B']
-            unique_cats = list(df[color_variable].unique())
-            cat_colors = dict(zip(unique_cats,colors[:len(unique_cats)]))
-            df.loc[:,'colors'] = df[color_variable].map(cat_colors)
-        
-        else:
-            df.loc[:,color_variable] = ['No category provided for coloring']*df.shape[0]
-            df.loc[:,'colors'] = ['#1A5C7F']*df.shape[0]
-
         # Plot long, lat circles
-        for lat, lng, color_cat, color in zip(df[lat_col], df[long_col], df[color_variable], df['colors']):
-            folium.Circle(location=[lat, lng],
-                          radius=50,
+        for lat, lng, bid, bn, beers in zip(df[lat_col], df[long_col], df['brewery_id'], df['brewery_name'], df['beer_type']):
+            folium.CircleMarker(location=[lat, lng],
+                          radius=7,
                           fill=True,
-                          color=color,
-                          popup = f'Latitude: {lat}, Longitude: {lng}, Color Category: {color_cat}').add_to(mapit)
+                          popup = f"""
+                          Location: ({round(lat,3)},{round(lng,3)})
+                          Brewery id and name: {bid}, {bn}
+                          Available beer types: {beers}""").add_to(mapit)
         folium.PolyLine(locations=df[[lat_col,long_col]]).add_to(mapit)
         folium.Marker(
             location=home,
@@ -66,9 +57,3 @@ def generate_map(dataframe,lat_col, long_col, home, filename, color_variable=Non
         mapit.save('{}.html'.format(filename))
         del df
 
-def cal_total_distance(routine):
-    '''The objective function. input routine, return total distance.
-    cal_total_distance(np.arange(num_points))
-    '''
-    num_points, = routine.shape
-    return sum([distance_matrix[routine[i % num_points], routine[(i + 1) % num_points]] for i in range(num_points)])
