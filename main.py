@@ -1,3 +1,4 @@
+import sys
 import sqlalchemy as sq
 import pandas as pd
 from haversine import haversine, Unit
@@ -9,8 +10,19 @@ from utils.functions import generate_map
 
 # Settings
 MAX_DISTANCE = 2000 # maximum travel distance
-INPUT_LAT = 51.355468 # home coordinates
-INPUT_LON = 11.100790 # home coordinates
+print(sys.argv)
+
+if len(sys.argv) == 1: # default home coordinates
+    INPUT_LAT, INPUT_LON = 51.355468, 11.100790
+    print(f"Selected default starting point: {INPUT_LAT, INPUT_LON}\n")
+else: # cmd coordiantes
+    try:
+        INPUT_LAT = float(sys.argv[1].split('=')[1])
+        INPUT_LON = float(sys.argv[2].split('=')[1])
+        print(f"Starting point input by user: {INPUT_LAT, INPUT_LON}\n")
+    except:
+        print("Wrong input coordinates.")
+
 starting_point = [INPUT_LAT, INPUT_LON]
 coord = ['latitude','longitude']
 
@@ -45,7 +57,7 @@ df_agg = df_agg.groupby(group)['beer_type'].agg(lambda x: '|'.join(x)).reset_ind
 # Calculated distances in KM between coordinates
 # Discard places which are too far from starting point
 # Filter distance matrix and sort by distance
-df_loc = pd.concat([home, df_agg, home]).reset_index(drop=True)
+df_loc = pd.concat([home, df_agg]).reset_index(drop=True)
 df_loc['distance'] = df_loc.apply(lambda x: haversine(starting_point, [x['latitude'], x['longitude']]), axis=1)
 df_loc = df_loc.sort_values(by='distance')
 df_loc = df_loc[df_loc['distance'] < MAX_DISTANCE*0.4]
@@ -56,6 +68,9 @@ distance_matrix = pairwise_distances(
     metric=haversine
 )
 num_points = points_coordinate.shape[0]
+# raise exception if total number of points is less than 8:
+if num_points < 8:
+    raise Exception('Not enough factories in this location. Try a different location.')
 num_points = num_points-1 if num_points % 2 == 1 else points_coordinate.shape[0]
 
 # Genetic Algorithm for TSP(Travelling Salesman Problem)
@@ -90,17 +105,9 @@ best_points, best_distance = ga_tsp.run()
 
 # reorder the whole route so that start and end is at HOME (index 0)
 ls = list(best_points)
-best_points = ls[ls.index(0):] + ls[:ls.index(0)]
-best_points_ = np.concatenate([best_points, [best_points[0]]])
+best_points = ls[ls.index(0):] + ls[:ls.index(0)] + [0]
+best_points_ = np.concatenate([best_points, [best_points[0]], ])
 best_points_coordinate = points_coordinate.values[best_points_, :]
-
-generate_map(
-    dataframe=df_loc.iloc[best_points,:],
-    lat_col='latitude',
-    long_col='longitude',
-    home=starting_point,
-    filename='output/visited_breweries'
-    )
 
 # For each step calculate distance traveled from home
 no_factories = df_loc.iloc[best_points,:].shape[0]-2
@@ -126,4 +133,13 @@ for beer in coll_uniq_beers:
     print(f"-> {beer}")
 
 print()
+generate_map(
+    dataframe=df_loc.iloc[best_points,:],
+    lat_col='latitude',
+    long_col='longitude',
+    home=starting_point,
+    filename='output/visited_factories'
+    )
+print()
+
 print(f"Total runtime: {pd.Timestamp.now()-start}")
