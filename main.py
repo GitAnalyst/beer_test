@@ -6,11 +6,13 @@ from sklearn.metrics import pairwise_distances
 import numpy as np
 from sko.GA import GA_TSP
 
+import os
+arr = os.listdir()
+print(arr)
 from utils.functions import generate_map
 
 # Settings
 MAX_DISTANCE = 2000 # maximum travel distance
-print(sys.argv)
 
 if len(sys.argv) == 1: # default home coordinates
     INPUT_LAT, INPUT_LON = 51.355468, 11.100790
@@ -138,7 +140,7 @@ generate_map(
     lat_col='latitude',
     long_col='longitude',
     home=starting_point,
-    filename='output/visited_factories'
+    filename='visited_factories'
     )
 print()
 

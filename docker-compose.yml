@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  satalia:
+    image: satalia
+    build:
+      context: .
+      dockerfile: Dockerfile
