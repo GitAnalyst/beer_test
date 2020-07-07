@@ -6,24 +6,21 @@ from sklearn.metrics import pairwise_distances
 import numpy as np
 from sko.GA import GA_TSP
 
-import os
-arr = os.listdir()
-print(arr)
 from utils.functions import generate_map
 
 # Settings
 MAX_DISTANCE = 2000 # maximum travel distance
 
-if len(sys.argv) == 1: # default home coordinates
-    INPUT_LAT, INPUT_LON = 51.355468, 11.100790
-    print(f"Selected default starting point: {INPUT_LAT, INPUT_LON}\n")
-else: # cmd coordiantes
-    try:
-        INPUT_LAT = float(sys.argv[1].split('=')[1])
-        INPUT_LON = float(sys.argv[2].split('=')[1])
-        print(f"Starting point input by user: {INPUT_LAT, INPUT_LON}\n")
-    except:
-        print("Wrong input coordinates.")
+prompt="Enter latitude and longitude separated by comma and a space (leave empty to skip and go with default coordinates): "
+inp = input(prompt)
+try:
+    if inp != "":
+        INPUT_LAT, INPUT_LON = [int(x) for x in inp.split(', ')]
+    else:
+        INPUT_LAT, INPUT_LON = 51.355468, 11.100790
+        print(f"No input provided, running with default coordinates: {INPUT_LAT, INPUT_LON}")
+except:
+    print("Wrong input coordinates.")
 
 starting_point = [INPUT_LAT, INPUT_LON]
 coord = ['latitude','longitude']
@@ -143,5 +140,4 @@ generate_map(
     filename='visited_factories'
     )
 print()
-
 print(f"Total runtime: {pd.Timestamp.now()-start}")
