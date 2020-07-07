@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_6555011712b9465d8f930070b50ee8ee {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_6555011712b9465d8f930070b50ee8ee" ></div>
+        
+</body>
+<script>    
+    
+            var map_6555011712b9465d8f930070b50ee8ee = L.map(
+                "map_6555011712b9465d8f930070b50ee8ee",
+                {
+                    center: [50.623200904717336, 10.646299387351142],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5.5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_11e7927c8dfd40fc9b40ad01c29657a0 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_6555011712b9465d8f930070b50ee8ee);
+        
+    
+            var circle_marker_902b6e01a6f74961ac556b6440f4f93b = L.circleMarker(
+                [51.355468, 11.10079],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_6555011712b9465d8f930070b50ee8ee);
+        
+    
+        var popup_008e8f5ace10482db0e9a7ccc64993d2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5fe078496c1d4b63b9e3ca06e61edc9a = $(`<div id="html_5fe078496c1d4b63b9e3ca06e61edc9a" style="width: 100.0%; height: 100.0%;">                           Location: (51.355,11.101)                           Brewery id and name: 0, HOME                           Available beer types: </div>`)[0];
+            popup_008e8f5ace10482db0e9a7ccc64993d2.setContent(html_5fe078496c1d4b63b9e3ca06e61edc9a);
+        
+
+        circle_marker_902b6e01a6f74961ac556b6440f4f93b.bindPopup(popup_008e8f5ace10482db0e9a7ccc64993d2)
+        ;
+
+        
+    
+    
+            var circle_marker_e712820afc304d01bc3b4c536c280bd0 = L.circleMarker(
+                [51.84389877319336, 10.753299713134766],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_6555011712b9465d8f930070b50ee8ee);
+        
+    
+        var popup_6ce2be06548d48e78002f9930f6f88cc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d32600e509944485ade3b0a64263708d = $(`<div id="html_d32600e509944485ade3b0a64263708d" style="width: 100.0%; height: 100.0%;">                           Location: (51.844,10.753)                           Brewery id and name: 639, Hasserder Brauerei                           Available beer types: Premium Pils</div>`)[0];
+            popup_6ce2be06548d48e78002f9930f6f88cc.setContent(html_d32600e509944485ade3b0a64263708d);
+        
+
+        circle_marker_e712820afc304d01bc3b4c536c280bd0.bindPopup(popup_6ce2be06548d48e78002f9930f6f88cc)
+        ;
+
+        
+    
+    
+            var circle_marker_4af3c90ad23149e585a3322df291d3ee = L.circleMarker(
+                [52.35440063476562, 9.753199577331543],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_6555011712b9465d8f930070b50ee8ee);
+        
+    
+        var popup_ad5db4ba55c94839a0d57164563234cd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e2ad238008ec44dfa48085eeab0909bf = $(`<div id="html_e2ad238008ec44dfa48085eeab0909bf" style="width: 100.0%; height: 100.0%;">                           Location: (52.354,9.753)                           Brewery id and name: 573, Gilde Brauerei                           Available beer types: Ratskeller|Lindener Spezial|Pilsener</div>`)[0];
+            popup_ad5db4ba55c94839a0d57164563234cd.setContent(html_e2ad238008ec44dfa48085eeab0909bf);
+        
+
+        circle_marker_4af3c90ad23149e585a3322df291d3ee.bindPopup(popup_ad5db4ba55c94839a0d57164563234cd)
+        ;
+
+        
+    
+    
+            var circle_marker_9d8074fcaf924b4a959823dbdbc16185 = L.circleMarker(
+                [52.39350128173828, 9.681400299072266],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_6555011712b9465d8f930070b50ee8ee);
+        
+    
+        var popup_de023e20e3e74faba08a842ddb0e9121 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_01fda8d473c540fe869462f802f64d15 = $(`<div id="html_01fda8d473c540fe869462f802f64d15" style="width: 100.0%; height: 100.0%;">                           Location: (52.394,9.681)                           Brewery id and name: 212, Brauerei Herrenhausen                           Available beer types: Weizen Bier|Premium Pilsener</div>`)[0];
+            popup_de023e20e3e74faba08a842ddb0e9121.setContent(html_01fda8d473c540fe869462f802f64d15);
+        
+
+        circle_marker_9d8074fcaf924b4a959823dbdbc16185.bindPopup(popup_de023e20e3e74faba08a842ddb0e9121)
+        ;
+
+        
+    
+    
+            var circle_marker_dd262ee3b70a453f865822ee445c060d = L.circleMarker(
+                [51.816200256347656, 9.864299774169922],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_6555011712b9465d8f930070b50ee8ee);
+        
+    
+        var popup_f084fd36bcea4c379ac9328ae9c57570 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cd38b204a3fa431e8a588c83fa221fa1 = $(`<div id="html_cd38b204a3fa431e8a588c83fa221fa1" style="width: 100.0%; height: 100.0%;">                           Location: (51.816,9.864)                           Brewery id and name: 484, Einbecker Brauhaus AG                           Available beer types: Schwarzbier / Dunkel|Ur-Bock Hell</div>`)[0];
+            popup_f084fd36bcea4c379ac9328ae9c57570.setContent(html_cd38b204a3fa431e8a588c83fa221fa1);
+        
+
+        circle_marker_dd262ee3b70a453f865822ee445c060d.bindPopup(popup_f084fd36bcea4c379ac9328ae9c57570)
+        ;
+
+        
+    
+    
+            var circle_marker_496262a6ff8a40b3b5d9736a4080cca6 = L.circleMarker(
+                [51.31750106811523, 9.479299545288086],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_6555011712b9465d8f930070b50ee8ee);
+        
+    
+        var popup_9cf3efc55f924225900a02876ffca025 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a69673646f56434294afe45c11d1cb24 = $(`<div id="html_a69673646f56434294afe45c11d1cb24" style="width: 100.0%; height: 100.0%;">                           Location: (51.318,9.479)                           Brewery id and name: 832, Martini-Brauerei                           Available beer types: Meister Pilsener|Weissbier Dunkel|Kasseler Premium Pils|Weissbier Hell</div>`)[0];
+            popup_9cf3efc55f924225900a02876ffca025.setContent(html_a69673646f56434294afe45c11d1cb24);
+        
+
+        circle_marker_496262a6ff8a40b3b5d9736a4080cca6.bindPopup(popup_9cf3efc55f924225900a02876ffca025)
+        ;
+
+        
+    
+    
+            var circle_marker_b1b30fc218ad465893e0fe54ecbb6ffd = L.circleMarker(
+                [51.26150131225586, 9.449399948120117],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_6555011712b9465d8f930070b50ee8ee);
+        
+    
+        var popup_3a03fa96f7e34152a95f5d2ba48882e5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e2b01e8b67af46a5bfd31638f33c7f14 = $(`<div id="html_e2b01e8b67af46a5bfd31638f33c7f14" style="width: 100.0%; height: 100.0%;">                           Location: (51.262,9.449)                           Brewery id and name: 681, Htt-Brauerei Bettenhuser                           Available beer types: Luxus Pils</div>`)[0];
+            popup_3a03fa96f7e34152a95f5d2ba48882e5.setContent(html_e2b01e8b67af46a5bfd31638f33c7f14);
+        
+
+        circle_marker_b1b30fc218ad465893e0fe54ecbb6ffd.bindPopup(popup_3a03fa96f7e34152a95f5d2ba48882e5)
+        ;
+
+        
+    
+    
+            var circle_marker_88d87f886856401092591f1c45e0b64d = L.circleMarker(
+                [51.44160079956055, 8.351900100708008],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_6555011712b9465d8f930070b50ee8ee);
+        
+    
+        var popup_71b059c4c0d24cceb286da63ee06d502 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_06238eb344774a7e87edc6c514e52599 = $(`<div id="html_06238eb344774a7e87edc6c514e52599" style="width: 100.0%; height: 100.0%;">                           Location: (51.442,8.352)                           Brewery id and name: 1337, Warsteiner Brauerei                           Available beer types: Warsteiner Premium Verum|Warsteiner Premium Dunkel|Warsteiner Premium Oktoberfest|Konig Ludwig Weissbier</div>`)[0];
+            popup_71b059c4c0d24cceb286da63ee06d502.setContent(html_06238eb344774a7e87edc6c514e52599);
+        
+
+        circle_marker_88d87f886856401092591f1c45e0b64d.bindPopup(popup_71b059c4c0d24cceb286da63ee06d502)
+        ;
+
+        
+    
+    
+            var circle_marker_e9d6a1d5009e419fb9b7a9e0ba915a6f = L.circleMarker(
+                [51.30550003051758, 8.125900268554688],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_6555011712b9465d8f930070b50ee8ee);
+        
+    
+        var popup_e3ba5d9d4c7b4366abcfbea2c1b5b1cf = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a58ffe96bd5c4f83a86799d32e40a559 = $(`<div id="html_a58ffe96bd5c4f83a86799d32e40a559" style="width: 100.0%; height: 100.0%;">                           Location: (51.306,8.126)                           Brewery id and name: 207, Brauerei C. & A. Veltins GmbH & Co.                           Available beer types: Pilsner</div>`)[0];
+            popup_e3ba5d9d4c7b4366abcfbea2c1b5b1cf.setContent(html_a58ffe96bd5c4f83a86799d32e40a559);
+        
+
+        circle_marker_e9d6a1d5009e419fb9b7a9e0ba915a6f.bindPopup(popup_e3ba5d9d4c7b4366abcfbea2c1b5b1cf)
+        ;
+
+        
+    
+    
+            var circle_marker_9c0a2c18959041e0ab6c5c5c10ce3d1c = L.circleMarker(
+                [50.52080154418945, 8.81659984588623],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_6555011712b9465d8f930070b50ee8ee);
+        
+    
+        var popup_de0ba505ca564a1bb5514b4e3a1e6fd3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ee34799c9a3f4fb7b83a403154167f42 = $(`<div id="html_ee34799c9a3f4fb7b83a403154167f42" style="width: 100.0%; height: 100.0%;">                           Location: (50.521,8.817)                           Brewery id and name: 785, Licher Privatbrauerei                           Available beer types: Export Premium</div>`)[0];
+            popup_de0ba505ca564a1bb5514b4e3a1e6fd3.setContent(html_ee34799c9a3f4fb7b83a403154167f42);
+        
+
+        circle_marker_9c0a2c18959041e0ab6c5c5c10ce3d1c.bindPopup(popup_de0ba505ca564a1bb5514b4e3a1e6fd3)
+        ;
+
+        
+    
+    
+            var circle_marker_4ea75aea6f2b4cb8a1292247f58ca831 = L.circleMarker(
+                [50.09429931640625, 8.691300392150879],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_6555011712b9465d8f930070b50ee8ee);
+        
+    
+        var popup_bffd1115e53b4158a48c66838fb050df = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ff1f335f719a4f97afe983fbeedf1d2a = $(`<div id="html_ff1f335f719a4f97afe983fbeedf1d2a" style="width: 100.0%; height: 100.0%;">                           Location: (50.094,8.691)                           Brewery id and name: 125, Binding Brauerei AG                           Available beer types: Lager</div>`)[0];
+            popup_bffd1115e53b4158a48c66838fb050df.setContent(html_ff1f335f719a4f97afe983fbeedf1d2a);
+        
+
+        circle_marker_4ea75aea6f2b4cb8a1292247f58ca831.bindPopup(popup_bffd1115e53b4158a48c66838fb050df)
+        ;
+
+        
+    
+    
+            var circle_marker_26ea656920cd426bb32537bc44bf0360 = L.circleMarker(
+                [49.92110061645508, 9.071499824523926],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_6555011712b9465d8f930070b50ee8ee);
+        
+    
+        var popup_9aecb461fa1144eca12bf89871f0e3b6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7c6d3cb3b0614e1eb1a67c8b686be3f6 = $(`<div id="html_7c6d3cb3b0614e1eb1a67c8b686be3f6" style="width: 100.0%; height: 100.0%;">                           Location: (49.921,9.071)                           Brewery id and name: 480, Eder & Heylands                           Available beer types: Schlappeseppl Export</div>`)[0];
+            popup_9aecb461fa1144eca12bf89871f0e3b6.setContent(html_7c6d3cb3b0614e1eb1a67c8b686be3f6);
+        
+
+        circle_marker_26ea656920cd426bb32537bc44bf0360.bindPopup(popup_9aecb461fa1144eca12bf89871f0e3b6)
+        ;
+
+        
+    
+    
+            var circle_marker_e719b75b650042618f1759e53648b859 = L.circleMarker(
+                [49.69929885864258, 9.249199867248537],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_6555011712b9465d8f930070b50ee8ee);
+        
+    
+        var popup_2e9eb0ecb1844a29b5c4790fdc41dd3e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6ff03b2733044623ae67d3192df34a93 = $(`<div id="html_6ff03b2733044623ae67d3192df34a93" style="width: 100.0%; height: 100.0%;">                           Location: (49.699,9.249)                           Brewery id and name: 228, Brauhaus Faust                           Available beer types: KrÃ¤usen NaturtrÃ¼b</div>`)[0];
+            popup_2e9eb0ecb1844a29b5c4790fdc41dd3e.setContent(html_6ff03b2733044623ae67d3192df34a93);
+        
+
+        circle_marker_e719b75b650042618f1759e53648b859.bindPopup(popup_2e9eb0ecb1844a29b5c4790fdc41dd3e)
+        ;
+
+        
+    
+    
+            var circle_marker_81cc1d509bbf4525b22740ec00475404 = L.circleMarker(
+                [49.79199981689453, 9.914999961853027],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_6555011712b9465d8f930070b50ee8ee);
+        
+    
+        var popup_f443eb52be0244349e7883498d25dd4e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2c2056fa64dc4091945338d5cf313e09 = $(`<div id="html_2c2056fa64dc4091945338d5cf313e09" style="width: 100.0%; height: 100.0%;">                           Location: (49.792,9.915)                           Brewery id and name: 1374, Wrzburger Hofbru AG                           Available beer types: Julius Echter Hefe-WeiÃŸbier Hell</div>`)[0];
+            popup_f443eb52be0244349e7883498d25dd4e.setContent(html_2c2056fa64dc4091945338d5cf313e09);
+        
+
+        circle_marker_81cc1d509bbf4525b22740ec00475404.bindPopup(popup_f443eb52be0244349e7883498d25dd4e)
+        ;
+
+        
+    
+    
+            var circle_marker_0c8a64f8789e4c96be6e2af806e82e2e = L.circleMarker(
+                [50.39490127563477, 9.77239990234375],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_6555011712b9465d8f930070b50ee8ee);
+        
+    
+        var popup_7c76fba242204b869af77abcb5809c96 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_504b2fd70c084c68942b600acddcac1d = $(`<div id="html_504b2fd70c084c68942b600acddcac1d" style="width: 100.0%; height: 100.0%;">                           Location: (50.395,9.772)                           Brewery id and name: 661, Hochstiftliches Brauhaus in Bayern                           Available beer types: Will-BrÃ¤u Ur-Bock</div>`)[0];
+            popup_7c76fba242204b869af77abcb5809c96.setContent(html_504b2fd70c084c68942b600acddcac1d);
+        
+
+        circle_marker_0c8a64f8789e4c96be6e2af806e82e2e.bindPopup(popup_7c76fba242204b869af77abcb5809c96)
+        ;
+
+        
+    
+    
+            var circle_marker_a02c458ad58c4b43a188d31842c0e3a8 = L.circleMarker(
+                [50.02239990234375, 10.829999923706056],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_6555011712b9465d8f930070b50ee8ee);
+        
+    
+        var popup_f13c16984cf047bfb1bc2dece3f6fd16 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4a4520532f4044cd88c2e3fc3b5b9e3d = $(`<div id="html_4a4520532f4044cd88c2e3fc3b5b9e3d" style="width: 100.0%; height: 100.0%;">                           Location: (50.022,10.83)                           Brewery id and name: 1114, Schlobrauerei Reckendorf                           Available beer types: Weissbier|Dunkel|Kellerbier|Edel-Pils</div>`)[0];
+            popup_f13c16984cf047bfb1bc2dece3f6fd16.setContent(html_4a4520532f4044cd88c2e3fc3b5b9e3d);
+        
+
+        circle_marker_a02c458ad58c4b43a188d31842c0e3a8.bindPopup(popup_f13c16984cf047bfb1bc2dece3f6fd16)
+        ;
+
+        
+    
+    
+            var circle_marker_8a9c91e238cd40e3a87bf87638742dd4 = L.circleMarker(
+                [49.90430068969727, 10.852399826049805],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_6555011712b9465d8f930070b50ee8ee);
+        
+    
+        var popup_04525f08d93e4514b4fe7efec768ced2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2b710cd60de74793b3979dcd14ea1d39 = $(`<div id="html_2b710cd60de74793b3979dcd14ea1d39" style="width: 100.0%; height: 100.0%;">                           Location: (49.904,10.852)                           Brewery id and name: 729, Kaiserdom Privatbrauerei Bamberg                           Available beer types: Meranier Schwarzbier|Kellerbier|Premium Pilsener|Rauchbier</div>`)[0];
+            popup_04525f08d93e4514b4fe7efec768ced2.setContent(html_2b710cd60de74793b3979dcd14ea1d39);
+        
+
+        circle_marker_8a9c91e238cd40e3a87bf87638742dd4.bindPopup(popup_04525f08d93e4514b4fe7efec768ced2)
+        ;
+
+        
+    
+    
+            var circle_marker_4e1c21bfbef84e62bb9ab048df74df45 = L.circleMarker(
+                [49.89419937133789, 10.885499954223633],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_6555011712b9465d8f930070b50ee8ee);
+        
+    
+        var popup_b2c94c661a804f29a6b44cc8f9808bc1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6d284749b0ad4757b7033de9ff5004ed = $(`<div id="html_6d284749b0ad4757b7033de9ff5004ed" style="width: 100.0%; height: 100.0%;">                           Location: (49.894,10.885)                           Brewery id and name: 222, Brauerei Spezial                           Available beer types: Rauchbier Lager|Rauchbier Weissbier|Rauchbier MÃ¤rzen|Ungespundetes</div>`)[0];
+            popup_b2c94c661a804f29a6b44cc8f9808bc1.setContent(html_6d284749b0ad4757b7033de9ff5004ed);
+        
+
+        circle_marker_4e1c21bfbef84e62bb9ab048df74df45.bindPopup(popup_b2c94c661a804f29a6b44cc8f9808bc1)
+        ;
+
+        
+    
+    
+            var circle_marker_554f0c7d2217437ea1fc6b4c986db782 = L.circleMarker(
+                [49.89419937133789, 10.885499954223633],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_6555011712b9465d8f930070b50ee8ee);
+        
+    
+        var popup_774a480c97c64e4dbc6c96fd5266d019 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_58a1b451f12b4fbab736979c90a93fe8 = $(`<div id="html_58a1b451f12b4fbab736979c90a93fe8" style="width: 100.0%; height: 100.0%;">                           Location: (49.894,10.885)                           Brewery id and name: 208, Brauerei Fssla                           Available beer types: Lagerbier|Zwergla|Gold-Pils|Weizla Hell</div>`)[0];
+            popup_774a480c97c64e4dbc6c96fd5266d019.setContent(html_58a1b451f12b4fbab736979c90a93fe8);
+        
+
+        circle_marker_554f0c7d2217437ea1fc6b4c986db782.bindPopup(popup_774a480c97c64e4dbc6c96fd5266d019)
+        ;
+
+        
+    
+    
+            var circle_marker_89e6946a07ae4dc886c8396b0f4f1f02 = L.circleMarker(
+                [49.89199829101562, 10.885299682617188],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_6555011712b9465d8f930070b50ee8ee);
+        
+    
+        var popup_8b3c86cd0ae044f1878958de28888844 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9a2b6a54c5674a76a8b1941aca30b9b9 = $(`<div id="html_9a2b6a54c5674a76a8b1941aca30b9b9" style="width: 100.0%; height: 100.0%;">                           Location: (49.892,10.885)                           Brewery id and name: 650, Heller Bru Trum                           Available beer types: Schlenkerla Helles Lagerbier|Aecht Schlenkerla Rauchbier MÃ¤rzen|Aecht Schlenkerla Rauchbier Weizen|Aecht Schlenkerla Rauchbier Urbock</div>`)[0];
+            popup_8b3c86cd0ae044f1878958de28888844.setContent(html_9a2b6a54c5674a76a8b1941aca30b9b9);
+        
+
+        circle_marker_89e6946a07ae4dc886c8396b0f4f1f02.bindPopup(popup_8b3c86cd0ae044f1878958de28888844)
+        ;
+
+        
+    
+    
+            var circle_marker_15c0442d9c184e9985c07f84dc0a911f = L.circleMarker(
+                [49.88909912109375, 10.88700008392334],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_6555011712b9465d8f930070b50ee8ee);
+        
+    
+        var popup_67a863328dc94bfdac32c20d5b9ed05e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c3504edecd054b83816c560e4aaba6bf = $(`<div id="html_c3504edecd054b83816c560e4aaba6bf" style="width: 100.0%; height: 100.0%;">                           Location: (49.889,10.887)                           Brewery id and name: 746, Klosterbru Bamberg                           Available beer types: Bamberger SchwÃ¤rzla|Braunbier|Bamberger Gold|Bockbier</div>`)[0];
+            popup_67a863328dc94bfdac32c20d5b9ed05e.setContent(html_c3504edecd054b83816c560e4aaba6bf);
+        
+
+        circle_marker_15c0442d9c184e9985c07f84dc0a911f.bindPopup(popup_67a863328dc94bfdac32c20d5b9ed05e)
+        ;
+
+        
+    
+    
+            var circle_marker_907150a9934d46c081da5865716818d1 = L.circleMarker(
+                [49.88510131835938, 10.88230037689209],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_6555011712b9465d8f930070b50ee8ee);
+        
+    
+        var popup_09802e76f889482b87725358a950f5d3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0c3fee9bfb4245c1957844006d2b90b0 = $(`<div id="html_0c3fee9bfb4245c1957844006d2b90b0" style="width: 100.0%; height: 100.0%;">                           Location: (49.885,10.882)                           Brewery id and name: 1024, Privater Brauereigasthof Greifenklau                           Available beer types: Weizen|Lagerbier</div>`)[0];
+            popup_09802e76f889482b87725358a950f5d3.setContent(html_0c3fee9bfb4245c1957844006d2b90b0);
+        
+
+        circle_marker_907150a9934d46c081da5865716818d1.bindPopup(popup_09802e76f889482b87725358a950f5d3)
+        ;
+
+        
+    
+    
+            var circle_marker_c0f0df812dd14b028f20d8904cb6e9ae = L.circleMarker(
+                [49.89039993286133, 10.905599594116213],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_6555011712b9465d8f930070b50ee8ee);
+        
+    
+        var popup_dab062e04c974887a431fb40d93659ee = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e2870e7fefda46688aa4675043ee5998 = $(`<div id="html_e2870e7fefda46688aa4675043ee5998" style="width: 100.0%; height: 100.0%;">                           Location: (49.89,10.906)                           Brewery id and name: 733, Keesmann Bru                           Available beer types: Weissbier|Bamberger Herren Pils</div>`)[0];
+            popup_dab062e04c974887a431fb40d93659ee.setContent(html_e2870e7fefda46688aa4675043ee5998);
+        
+
+        circle_marker_c0f0df812dd14b028f20d8904cb6e9ae.bindPopup(popup_dab062e04c974887a431fb40d93659ee)
+        ;
+
+        
+    
+    
+            var circle_marker_d9b9eeb5d376455a881d59ceb08b343c = L.circleMarker(
+                [49.890098571777344, 10.906700134277344],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_6555011712b9465d8f930070b50ee8ee);
+        
+    
+        var popup_519729e13096432bb537056337bbdf08 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fa2c8a3a7fc545b781aa8446bffc6127 = $(`<div id="html_fa2c8a3a7fc545b781aa8446bffc6127" style="width: 100.0%; height: 100.0%;">                           Location: (49.89,10.907)                           Brewery id and name: 70, Bamberger Mahr's-Bru                           Available beer types: Der Weisse Bock|Hell|Pilsner|Ungespundet Lager Hefetrub|Christmas Bock|Weisse|HefeweiÃŸbier</div>`)[0];
+            popup_519729e13096432bb537056337bbdf08.setContent(html_fa2c8a3a7fc545b781aa8446bffc6127);
+        
+
+        circle_marker_d9b9eeb5d376455a881d59ceb08b343c.bindPopup(popup_519729e13096432bb537056337bbdf08)
+        ;
+
+        
+    
+    
+            var circle_marker_de8251aeb3844f1fb0c385f7d0897c0c = L.circleMarker(
+                [49.892799377441406, 10.913100242614746],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_6555011712b9465d8f930070b50ee8ee);
+        
+    
+        var popup_189369079acf44508c4c681c5d50675a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_231be05502ca4996bbd683e03d8917bc = $(`<div id="html_231be05502ca4996bbd683e03d8917bc" style="width: 100.0%; height: 100.0%;">                           Location: (49.893,10.913)                           Brewery id and name: 819, Maisel Bru                           Available beer types: Pils|Benediktiner Dunkel|Eine Bamberger Weisse Hell</div>`)[0];
+            popup_189369079acf44508c4c681c5d50675a.setContent(html_231be05502ca4996bbd683e03d8917bc);
+        
+
+        circle_marker_de8251aeb3844f1fb0c385f7d0897c0c.bindPopup(popup_189369079acf44508c4c681c5d50675a)
+        ;
+
+        
+    
+    
+            var circle_marker_8b72223b217e4b7a869eedef8cd41620 = L.circleMarker(
+                [49.80199813842773, 11.032400131225586],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_6555011712b9465d8f930070b50ee8ee);
+        
+    
+        var popup_0a326f2968da46fc8fc55d59bbfcc9e1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d9fe603e50ea4b0c8a4baeb950b90c98 = $(`<div id="html_d9fe603e50ea4b0c8a4baeb950b90c98" style="width: 100.0%; height: 100.0%;">                           Location: (49.802,11.032)                           Brewery id and name: 1188, St. GeorgenBru Modschiedler KG                           Available beer types: Keller-Bier</div>`)[0];
+            popup_0a326f2968da46fc8fc55d59bbfcc9e1.setContent(html_d9fe603e50ea4b0c8a4baeb950b90c98);
+        
+
+        circle_marker_8b72223b217e4b7a869eedef8cd41620.bindPopup(popup_0a326f2968da46fc8fc55d59bbfcc9e1)
+        ;
+
+        
+    
+    
+            var circle_marker_9b905b25bc3846d196a466b32842f453 = L.circleMarker(
+                [49.46429824829102, 11.084699630737305],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_6555011712b9465d8f930070b50ee8ee);
+        
+    
+        var popup_420981d26f014ecf8ee806a29c880dc6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6f48d5c482c747799b14079ef5f51a0f = $(`<div id="html_6f48d5c482c747799b14079ef5f51a0f" style="width: 100.0%; height: 100.0%;">                           Location: (49.464,11.085)                           Brewery id and name: 1290, Tucher Bru                           Available beer types: Bajuvator Doppelbock|Helles Hefe Weizen|Dunkles Hefe Weizen|Kristall Weizen</div>`)[0];
+            popup_420981d26f014ecf8ee806a29c880dc6.setContent(html_6f48d5c482c747799b14079ef5f51a0f);
+        
+
+        circle_marker_9b905b25bc3846d196a466b32842f453.bindPopup(popup_420981d26f014ecf8ee806a29c880dc6)
+        ;
+
+        
+    
+    
+            var circle_marker_921796df12ba4fd999ad70dff86118a7 = L.circleMarker(
+                [49.62829971313477, 11.549799919128418],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_6555011712b9465d8f930070b50ee8ee);
+        
+    
+        var popup_881fedebcf24420189cdc7a4c8db8df6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_66222fe687994bb38747f77dad29851f = $(`<div id="html_66222fe687994bb38747f77dad29851f" style="width: 100.0%; height: 100.0%;">                           Location: (49.628,11.55)                           Brewery id and name: 728, Kaiser-Bru                           Available beer types: Original Lager</div>`)[0];
+            popup_881fedebcf24420189cdc7a4c8db8df6.setContent(html_66222fe687994bb38747f77dad29851f);
+        
+
+        circle_marker_921796df12ba4fd999ad70dff86118a7.bindPopup(popup_881fedebcf24420189cdc7a4c8db8df6)
+        ;
+
+        
+    
+    
+            var circle_marker_b042f3e6c1cc4e0ab19480e1e3a2a878 = L.circleMarker(
+                [49.94770050048828, 11.565899848937988],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_6555011712b9465d8f930070b50ee8ee);
+        
+    
+        var popup_e995d764cc7e4b04b1946b9a77ce4dc9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ef6ab2154b0445308b57e0089e0b393c = $(`<div id="html_ef6ab2154b0445308b57e0089e0b393c" style="width: 100.0%; height: 100.0%;">                           Location: (49.948,11.566)                           Brewery id and name: 209, Brauerei Gbr. Maisel KG                           Available beer types: Maisel's Weisse Kristall</div>`)[0];
+            popup_e995d764cc7e4b04b1946b9a77ce4dc9.setContent(html_ef6ab2154b0445308b57e0089e0b393c);
+        
+
+        circle_marker_b042f3e6c1cc4e0ab19480e1e3a2a878.bindPopup(popup_e995d764cc7e4b04b1946b9a77ce4dc9)
+        ;
+
+        
+    
+    
+            var circle_marker_25aa0667157943e4a0cf9ce2150fe52d = L.circleMarker(
+                [50.10599899291992, 11.444199562072756],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_6555011712b9465d8f930070b50ee8ee);
+        
+    
+        var popup_eaa386adda484353b3d059090564b27c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8435b7c3525a4ab4b83f4a2a2380eda6 = $(`<div id="html_8435b7c3525a4ab4b83f4a2a2380eda6" style="width: 100.0%; height: 100.0%;">                           Location: (50.106,11.444)                           Brewery id and name: 757, Kulmbacher Brauerei AG                           Available beer types: Premium Pils Edelherb|EKU 28|Eisbock|MÃ¶nchshof KellerbrÃ¤u|Kapuziner Schwarz-Weizen|MÃ¶nchshof Premium Schwarzbier|ReichelbrÃ¤u Eisbock|Kapuziner Kristall-Weizen|Kapuziner WeiÃŸbier|MÃ¶nchshof Original Pils|EKU Pils|Kapuziner Gold</div>`)[0];
+            popup_eaa386adda484353b3d059090564b27c.setContent(html_8435b7c3525a4ab4b83f4a2a2380eda6);
+        
+
+        circle_marker_25aa0667157943e4a0cf9ce2150fe52d.bindPopup(popup_eaa386adda484353b3d059090564b27c)
+        ;
+
+        
+    
+    
+            var circle_marker_0e5c4f64d445493fbbffdcbc83493104 = L.circleMarker(
+                [50.10770034790039, 11.45300006866455],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_6555011712b9465d8f930070b50ee8ee);
+        
+    
+        var popup_f92dd48de84846fd9916a8da36fb8899 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f6be01d8beb04eba9a6c3ef52b833dbd = $(`<div id="html_f6be01d8beb04eba9a6c3ef52b833dbd" style="width: 100.0%; height: 100.0%;">                           Location: (50.108,11.453)                           Brewery id and name: 758, Kulmbacher Mnchshof Bru                           Available beer types: Original Pils</div>`)[0];
+            popup_f92dd48de84846fd9916a8da36fb8899.setContent(html_f6be01d8beb04eba9a6c3ef52b833dbd);
+        
+
+        circle_marker_0e5c4f64d445493fbbffdcbc83493104.bindPopup(popup_f92dd48de84846fd9916a8da36fb8899)
+        ;
+
+        
+    
+    
+            var circle_marker_b5e92971d3ea48a692656cc359fe53d2 = L.circleMarker(
+                [51.339698791503906, 12.371399879455565],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_6555011712b9465d8f930070b50ee8ee);
+        
+    
+        var popup_dab8c999ab86415cbbad51cfd7506956 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_21633d8461f2442c99cc74c1875bc65f = $(`<div id="html_21633d8461f2442c99cc74c1875bc65f" style="width: 100.0%; height: 100.0%;">                           Location: (51.34,12.371)                           Brewery id and name: 567, Gasthaus & Gosebrauerei Bayerischer Bahnhof                           Available beer types: Gose</div>`)[0];
+            popup_dab8c999ab86415cbbad51cfd7506956.setContent(html_21633d8461f2442c99cc74c1875bc65f);
+        
+
+        circle_marker_b5e92971d3ea48a692656cc359fe53d2.bindPopup(popup_dab8c999ab86415cbbad51cfd7506956)
+        ;
+
+        
+    
+    
+            var circle_marker_a2b2cf8c30e948b8b3f40735a97b03df = L.circleMarker(
+                [51.11479949951172, 13.914999961853027],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_6555011712b9465d8f930070b50ee8ee);
+        
+    
+        var popup_92294e650999480e9f1fc7dcbb9f4a81 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2916892b6742461bbc70ce3e30cfc5c4 = $(`<div id="html_2916892b6742461bbc70ce3e30cfc5c4" style="width: 100.0%; height: 100.0%;">                           Location: (51.115,13.915)                           Brewery id and name: 1037, Radeberger Exportbierbrauerei                           Available beer types: Pilsener</div>`)[0];
+            popup_92294e650999480e9f1fc7dcbb9f4a81.setContent(html_2916892b6742461bbc70ce3e30cfc5c4);
+        
+
+        circle_marker_a2b2cf8c30e948b8b3f40735a97b03df.bindPopup(popup_92294e650999480e9f1fc7dcbb9f4a81)
+        ;
+
+        
+    
+    
+            var circle_marker_96bf47d5ff5147c6ae1e5c83de0115dd = L.circleMarker(
+                [52.47930145263672, 13.429300308227539],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_6555011712b9465d8f930070b50ee8ee);
+        
+    
+        var popup_8ffc0d7f72264a03833a7055f84e35cd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_071ae45c37114604bc5c9a467fa1918b = $(`<div id="html_071ae45c37114604bc5c9a467fa1918b" style="width: 100.0%; height: 100.0%;">                           Location: (52.479,13.429)                           Brewery id and name: 103, Berliner Kindl Brauerei AG                           Available beer types: Weisse</div>`)[0];
+            popup_8ffc0d7f72264a03833a7055f84e35cd.setContent(html_071ae45c37114604bc5c9a467fa1918b);
+        
+
+        circle_marker_96bf47d5ff5147c6ae1e5c83de0115dd.bindPopup(popup_8ffc0d7f72264a03833a7055f84e35cd)
+        ;
+
+        
+    
+    
+            var circle_marker_f550f5e897de46f18c998342e118e858 = L.circleMarker(
+                [52.523399353027344, 13.411399841308596],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_6555011712b9465d8f930070b50ee8ee);
+        
+    
+        var popup_90adc9b3080840258c8c60f92acb82d8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_39a56b841883463dbaf25d5b93f9decd = $(`<div id="html_39a56b841883463dbaf25d5b93f9decd" style="width: 100.0%; height: 100.0%;">                           Location: (52.523,13.411)                           Brewery id and name: 104, Berliner-Kindl-Schultheiss-Brauerei                           Available beer types: Original Berliner Weisse</div>`)[0];
+            popup_90adc9b3080840258c8c60f92acb82d8.setContent(html_39a56b841883463dbaf25d5b93f9decd);
+        
+
+        circle_marker_f550f5e897de46f18c998342e118e858.bindPopup(popup_90adc9b3080840258c8c60f92acb82d8)
+        ;
+
+        
+    
+    
+            var circle_marker_108273df15dd441bbe16067dbe89b421 = L.circleMarker(
+                [51.355468, 11.10079],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_6555011712b9465d8f930070b50ee8ee);
+        
+    
+        var popup_44c1963a430b4e68abe3ff8e5f583924 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_28b98855d1004922880ef4460ad901f9 = $(`<div id="html_28b98855d1004922880ef4460ad901f9" style="width: 100.0%; height: 100.0%;">                           Location: (51.355,11.101)                           Brewery id and name: 0, HOME                           Available beer types: </div>`)[0];
+            popup_44c1963a430b4e68abe3ff8e5f583924.setContent(html_28b98855d1004922880ef4460ad901f9);
+        
+
+        circle_marker_108273df15dd441bbe16067dbe89b421.bindPopup(popup_44c1963a430b4e68abe3ff8e5f583924)
+        ;
+
+        
+    
+    
+            var poly_line_e31c97f58de94fafbb9b78dc026f4176 = L.polyline(
+                [[51.355468, 11.10079], [51.84389877319336, 10.753299713134766], [52.35440063476562, 9.753199577331543], [52.39350128173828, 9.681400299072266], [51.816200256347656, 9.864299774169922], [51.31750106811523, 9.479299545288086], [51.26150131225586, 9.449399948120117], [51.44160079956055, 8.351900100708008], [51.30550003051758, 8.125900268554688], [50.52080154418945, 8.81659984588623], [50.09429931640625, 8.691300392150879], [49.92110061645508, 9.071499824523926], [49.69929885864258, 9.249199867248537], [49.79199981689453, 9.914999961853027], [50.39490127563477, 9.77239990234375], [50.02239990234375, 10.829999923706056], [49.90430068969727, 10.852399826049805], [49.89419937133789, 10.885499954223633], [49.89419937133789, 10.885499954223633], [49.89199829101562, 10.885299682617188], [49.88909912109375, 10.88700008392334], [49.88510131835938, 10.88230037689209], [49.89039993286133, 10.905599594116213], [49.890098571777344, 10.906700134277344], [49.892799377441406, 10.913100242614746], [49.80199813842773, 11.032400131225586], [49.46429824829102, 11.084699630737305], [49.62829971313477, 11.549799919128418], [49.94770050048828, 11.565899848937988], [50.10599899291992, 11.444199562072756], [50.10770034790039, 11.45300006866455], [51.339698791503906, 12.371399879455565], [51.11479949951172, 13.914999961853027], [52.47930145263672, 13.429300308227539], [52.523399353027344, 13.411399841308596], [51.355468, 11.10079]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_6555011712b9465d8f930070b50ee8ee);
+        
+    
+            var marker_ae841eb47915444a854d7f518cd303dd = L.marker(
+                [51.355468, 11.10079],
+                {}
+            ).addTo(map_6555011712b9465d8f930070b50ee8ee);
+        
+    
+            var icon_b6e9b91465344518aea516310bb031e7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ae841eb47915444a854d7f518cd303dd.setIcon(icon_b6e9b91465344518aea516310bb031e7);
+        
+</script>
