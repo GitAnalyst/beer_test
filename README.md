@@ -29,7 +29,9 @@ To run the application, clone the repository and in the root directory run the f
 
 
 ## Example output:
-$ docker image build --tag satalia:beer .<br/>
+
+```
+$ docker image build --tag satalia:beer .
 Sending build context to Docker daemon  4.322MB
 Step 1/8 : FROM python:3.8
  ---> 7f5b6ccd03e9
@@ -57,8 +59,10 @@ Step 8/8 : ENTRYPOINT ["python", "main.py"]
 Successfully built 4a629690afd6
 Successfully tagged satalia:beer
 SECURITY WARNING: You are building a Docker image from Windows against a non-Windows Docker host. All files and directories added to build context will have '-rwxr-xr-x' permissions. It is recommended to double check and reset permissions for sensitive files and directories.
+```
 
-$ docker run -ti --name tmp satalia:beer /bin/true<br/>
+```
+$ docker run -ti --name tmp satalia:beer /bin/true
 Enter latitude and longitude separated by comma and a space (leave empty to skip and go with default coordinates): 
 No input provided, running with default coordinates: (51.355468, 11.10079)
 Found 34 factories:
@@ -184,8 +188,11 @@ Total unique beers collected:  79
 Map completed, saving as visited_factories.html
 
 Total runtime: 0 days 00:00:59.997538
+```
 
-$ docker cp tmp:/visited_factories.html "C:\Users\mariu\REPOS\Satalia\output"<br/>
+`$ docker cp tmp:/visited_factories.html "C:\Users\mariu\REPOS\Satalia\output"`
 
-$ docker rm tmp<br/>
+```
+$ docker rm tmp
 tmp
+```
