@@ -15,7 +15,7 @@ prompt="Enter latitude and longitude separated by comma and a space (leave empty
 inp = input(prompt)
 try:
     if inp != "":
-        INPUT_LAT, INPUT_LON = [int(x) for x in inp.split(', ')]
+        INPUT_LAT, INPUT_LON = [float(x) for x in inp.replace(',',' ').split()]
     else:
         INPUT_LAT, INPUT_LON = 51.355468, 11.100790
         print(f"No input provided, running with default coordinates: {INPUT_LAT, INPUT_LON}")
