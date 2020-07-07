@@ -189,8 +189,9 @@ Map completed, saving as visited_factories.html
 
 Total runtime: 0 days 00:00:59.997538
 ```
-
-`$ docker cp tmp:/visited_factories.html "C:\Users\mariu\REPOS\Satalia\output"`
+```
+$ docker cp tmp:/visited_factories.html "C:\Users\mariu\REPOS\Satalia\output"
+```
 
 ```
 $ docker rm tmp
